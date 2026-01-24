@@ -181,50 +181,6 @@
   </nav>
 </div>
 
-<div class="sidebar-music">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-  
-  <div id="aplayer-sidebar" class="aplayer" data-fixed="true" data-mini="true"></div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-  <script>
-    // 等待页面加载完成
-    document.addEventListener('DOMContentLoaded', function() {
-      // 创建播放器实例
-      const ap = new APlayer({
-        container: document.getElementById('aplayer-sidebar'),
-        fixed: true,        // 固定位置
-        mini: true,         // 迷你模式
-        autoplay: false,    // 不自动播放
-        theme: '#2980b9',   // 主题颜色
-        loop: 'all',        // 循环播放
-        order: 'random',    // 随机播放
-        preload: 'auto',    // 预加载
-        volume: 0.7,        // 音量
-        mutex: true,        // 互斥（同时只能播放一个）
-        listFolded: true,   // 折叠播放列表
-        listMaxHeight: '90px', // 列表最大高度
-        audio: [
-          {
-            name: '达尔文',
-            artist: '蔡健雅',
-            url: 'C:\Users\Anjian Li\Desktop\My Blog\source\蔡健雅 - 达尔文.mp3',      // 你的音乐文件路径
-            cover: 'C:\Users\Anjian Li\Desktop\My Blog\source\蔡健雅 - 达尔文.jpg' // 封面路径
-          },
-          {
-            name: '你的歌曲名2',
-            artist: '歌手2',
-            url: '/music/song2.mp3',
-            cover: '/music-cover/cover2.jpg'
-          }
-          // 在这里添加更多歌曲...
-        ]
-      });
-      
-      console.log('音乐播放器加载成功！');
-    });
-  </script>
-</div>
         </div>
       </div>
     </div>
